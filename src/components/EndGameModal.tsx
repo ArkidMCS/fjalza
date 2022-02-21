@@ -94,10 +94,10 @@ export const EndGameModal = ({
           </button>
           {gameState === state.won && (
             <>
-              <h1 className=" text-3xl">Congrats! 🎉</h1>
+              <h1 className=" text-3xl">Urime! 🎉</h1>
               <dl className="mt-5 grid grid-cols-1 gap-5">
                 <div className="rounded-lg p-4 flex-grow relative nm-flat-background dark:nm-flat-background-dark text-primary dark:text-primary-dark">
-                  <dt className="text-sm font-medium truncate">Current Streak</dt>
+                  <dt className="text-sm font-medium truncate">Fitore Rradhazi</dt>
                   <dd
                     className={`mt-1 text-3xl font-semibold ${currentStreakClass(currentStreak)}`}
                   >
@@ -110,7 +110,7 @@ export const EndGameModal = ({
 
                 {avgGuessesPerGame > 0 && (
                   <div className="rounded-lg p-4 flex-grow relative nm-flat-background dark:nm-flat-background-dark text-primary dark:text-primary-dark">
-                    <dt className="text-sm font-medium truncate">Avg. guesses in streak</dt>
+                    <dt className="text-sm font-medium truncate">Prova mesatare për lojë</dt>
                     <dd
                       className={`mt-1 text-3xl font-semibold ${avgGuessesClass(
                         avgGuessesPerGame
@@ -125,7 +125,7 @@ export const EndGameModal = ({
                 )}
 
                 <div className="rounded-lg p-4 flex-grow relative nm-flat-background dark:nm-flat-background-dark text-primary dark:text-primary-dark">
-                  <dt className="text-sm font-medium truncate">Longest streak</dt>
+                  <dt className="text-sm font-medium truncate">Fitoret më të shumta rresht</dt>
                   <dd className="mt-1 text-3xl font-semibold">{longestStreak}</dd>
                 </div>
               </dl>
@@ -137,13 +137,13 @@ export const EndGameModal = ({
               <div className="text-primary dark:text-primary-dark text-4xl text-center">
                 <p>Oops!</p>
                 <p className="mt-3 text-2xl">
-                  The word was <strong>{answer}</strong>
+                  Fjala ishte <strong>{answer}</strong>
                 </p>
                 <p className="mt-6 text-base">
-                  Current streak: <strong>{currentStreak}</strong> {currentStreak > 4 && '🔥'}
+                  Fitoret rradhazi: <strong>{currentStreak}</strong> {currentStreak > 4 && '🔥'}
                 </p>
                 <p className="text-base">
-                  Longest streak: <strong>{longestStreak}</strong>
+                  Fitoret më të shumta rresht: <strong>{longestStreak}</strong>
                 </p>
               </div>
             </>
