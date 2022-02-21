@@ -1,4 +1,4 @@
-është: true,
+const words: { [key: string]: boolean } = {është: true,
 shumë: true,
 ishte: true,
 duhet: true,
@@ -23,7 +23,6 @@ madhe: true,
 pasur: true,
 thënë: true,
 shkak: true,
-const words: { [key: string]: boolean } = {
 bëhet: true,
 asnjë: true,
 duket: true,
