@@ -18,9 +18,9 @@ const state = {
 }
 
 export const difficulty = {
-  easy: 'easy',
-  normal: 'normal',
-  hard: 'hard',
+  easy: 'Lehtë',
+  normal: 'Normal',
+  hard: 'Vështirë',
 }
 
 const getRandomAnswer = () => {
@@ -95,11 +95,11 @@ function App() {
   const [difficultyLevel, setDifficultyLevel] = useLocalStorage('difficulty', difficulty.normal)
   const getDifficultyLevelInstructions = () => {
     if (difficultyLevel === difficulty.easy) {
-      return 'Guess any 5 letters'
+      return 'Vendosni 5 shkronja'
     } else if (difficultyLevel === difficulty.hard) {
-      return "Guess any valid word using all the hints you've been given"
+      return "Vendosni çfarëdolloj fjale qe përmbush informacionet e dhëna"
     } else {
-      return 'Guess any valid word'
+      return 'Vendosni çfarëdolloj fjale'
     }
   }
   const eg: { [key: number]: string } = {}
@@ -376,7 +376,7 @@ function App() {
             <Settings />
           </button>
           <h1 className="flex-1 text-center text-xl xxs:text-2xl sm:text-4xl tracking-wide font-bold font-righteous">
-            WORD MASTER
+            FJALZA
           </h1>
           <button
             type="button"
